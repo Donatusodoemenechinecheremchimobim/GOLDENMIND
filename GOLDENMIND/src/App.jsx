@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import BookingModal from './components/BookingModal';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import BookingModal from './components/BookingModal.jsx';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Conditions from './pages/Conditions';
-import Telehealth from './pages/Telehealth';
-import Patients from './pages/Patients';
-import Contact from './pages/Contact';
-
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Services from './pages/Services.jsx';
+import Conditions from './pages/Conditions.jsx';
+import Telehealth from './pages/Telehealth.jsx';
+import Patients from './pages/Patients.jsx';
+import Contact from './pages/Contact.jsx';
 export default function App() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [bookingPreset, setBookingPreset] = useState(null);
